@@ -1,0 +1,7 @@
+{
+	"extends": "@trust-layer/tsconfig/app.json",
+	"compilerOptions": {
+		"rootDir": "src"
+	},
+	"include": ["src"]
+}

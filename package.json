@@ -1,0 +1,35 @@
+{
+	"name": "trust-layer",
+	"private": true,
+	"version": "0.0.0",
+	"description": "Pre-accept code reviewer for AI coding agents",
+	"license": "MIT",
+	"type": "module",
+	"engines": {
+		"node": ">=22"
+	},
+	"scripts": {
+		"build": "turbo run build",
+		"typecheck": "turbo run typecheck",
+		"test": "turbo run test",
+		"lint": "biome check .",
+		"format": "biome check --write ."
+	},
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "11.24.0",
+			"onFail": "download"
+		}
+	},
+	"packageManager": "pnpm@11.24.0",
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.10",
+		"@changesets/cli": "^3.0.1",
+		"@trust-layer/tsconfig": "workspace:*",
+		"@types/node": "catalog:",
+		"turbo": "^2.10.12",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
+	}
+}

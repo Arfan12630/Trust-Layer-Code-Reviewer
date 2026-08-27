@@ -1,0 +1,23 @@
+{
+	"name": "@trust-layer/reviewer",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"scripts": {
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run --passWithNoTests"
+	},
+	"devDependencies": {
+		"@trust-layer/tsconfig": "workspace:*",
+		"vitest": "catalog:"
+	},
+	"dependencies": {
+		"@trust-layer/schema": "workspace:*",
+		"@anthropic-ai/sdk": "catalog:",
+		"zod": "catalog:",
+		"pino": "catalog:"
+	}
+}

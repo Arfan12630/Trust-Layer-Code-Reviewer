@@ -1,0 +1,28 @@
+{
+	"name": "@trust-layer/hook-claude-code",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"bin": {
+		"trust-layer-hook": "./dist/hook.js"
+	},
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run --passWithNoTests",
+		"clean": "rm -rf dist"
+	},
+	"devDependencies": {
+		"@trust-layer/tsconfig": "workspace:*",
+		"@trust-layer/tsup-config": "workspace:*",
+		"@types/node": "catalog:",
+		"tsup": "catalog:",
+		"vitest": "catalog:"
+	},
+	"dependencies": {
+		"@trust-layer/adapter": "workspace:*",
+		"@trust-layer/schema": "workspace:*",
+		"diff": "catalog:"
+	}
+}

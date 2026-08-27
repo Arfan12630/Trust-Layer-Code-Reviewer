@@ -1,0 +1,8 @@
+{
+	"name": "trust-layer",
+	"version": "0.0.1",
+	"description": "Pre-accept review of Claude Code's own edits — flags dropped error handling, risky signature changes, and other agent-class failure modes before you accept them.",
+	"author": {
+		"name": "Trust Layer"
+	}
+}
